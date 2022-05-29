@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.custom-background-color {
+    background: #2E2E2E;
+}
+
+nav{
+    width:100%;
+    height:70px;
+    background: #1C1C1C;
+    overflow:auto;
+}
+ul{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+li{
+    float: left;
+}
+.logo img{
+    position:absolute;
+    margin-top: 0px;
+    margin-left:0px;
+}
+nav a{
+    width:100px;
+    display:block;
+    padding:20px 15px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    margin-left: -35%;
+}
+nav a:hover {
+    background: #ECDF26;
+    transition: 0.5s;
+    text-transform: uppercase;
+    color: #000000;
+}
+.topnav-right {
+    float: right;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .custom-color{
+    position: relative;
+    max-width: 550px;
+    transform: translate(0%, -10%);
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #fff;
+}
+.content .custom-color h2{
+    font-size: 2.1em;
+    Line-height: 1.4em;
+    font-weight: 400;
+}
+.content .custom-color h2 span{
+    color: #ECDF26;
+    font-size: 1.25em;
+    font-weight: 1000;
+}
+.content .custom-color a{
+    display:inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    background: #CD6312;
+    border-radius: 60px;
+    Letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: 1000;
+    color: #000000;
+    transform: translate(35%, 2%);
+}
+.content .custom-color a:hover{
+    background: #ECDF26;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.content .imgBox{
+    width: 1285px;
+    display: flex;
+    justify-content: center;
+    
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-9%, -220%);
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: 500;
+  }
+.centered-lower{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, -150%);
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #EC7C26;
+    padding: 30px 0;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px; 
+}
+.footer-col h4{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+.footer-col h4:hover{
+    letter-spacing: 0.25em;
+}
+.footer-col p{
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 550;
+    color: #000000;
+    display: block;
+    
+}
+.footer-col p:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000000;
+    transition: all 0.5 ease;
+}
+.footer-col .social-links a:hover{
+    color: #000000;
+    background-color: #fff;
+}
+.middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(105%, -45%);
+    z-index: 1;
+}
+.middle button{
+    padding: 17px 34px;
+    font-size: 20px;
+    font-weight:600;
+    color: #000000;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.popup {
+    position: fixed;
+    top: 150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25); 
+    z-index: 1;
+    width: 500px;
+    padding: 25px 35px;
+    background:#fff;
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+                    
+    
+}
+.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+    
+}
+.popup .close-btn {
+    position: fixed;
+    top:16px;
+    right: 18px;
+    width: 27px;
+    height: 27px;
+    background:#454545;
+    color: #bbbbbb;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#ct-form h2 {
+    text-align: center;
+    margin: 11px 0px 21px;
+    font-size: 30px;
+}
+#userDetails{
+    margin: 11px 0px;
+}
+#userDetails #first{
+    margin: 4px 0px;
+}
+#userDetails #second{
+    margin: 4px 0px;
+}
+#userDetails #user{
+    margin: 4px 0px;
+}
+#userDetails #password{
+    margin: 4px 0px;
+}
+#addresses{
+    margin: 11px 0px; 
+}
+#addresses #home {
+    margin: 4px 0px;
+}
+#addresses #work {
+    margin: 4px 0px;       
+}
+#contacts {
+    margin: 11px 0px;
+}
+#contacts #mobile{
+    margin: 4px 0px; 
+}
+#contacts #email{
+    margin: 4px 0px; 
+}
+#userDetails input[type="text"],
+#userDetails input[type="password"]{
+    margin-top:5px;
+    display:block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 7px;
+}
+input {background-color: lightgray;}
+#addresses input[type="text"]{
+    margin-top:5px;
+    display:block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 7px;
+}
+#contacts input[type="text"]{
+    margin-top:5px;
+    display:block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 7px;
+}
+#ct-form .form-element button{
+    width: 98%;
+    height: 35px;
+    border: none;
+    outline:none;
+    font-size: 16px;
+    background:#000000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
